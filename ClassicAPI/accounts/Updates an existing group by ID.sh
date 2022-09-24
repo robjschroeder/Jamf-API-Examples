@@ -15,7 +15,7 @@ jamfProURL=""
 # ID value to filter by
 groupID=""
 
-# Sample Request Body
+# Sample Request Body, modify to fit your needs
 requestBody="<group>
 	<id>1</id>
 	<name>Administrators</name>
