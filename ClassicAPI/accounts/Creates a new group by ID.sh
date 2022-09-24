@@ -12,6 +12,7 @@ jamfProAPIUsername=""
 jamfProAPIPassword=""
 jamfProURL=""
 
+# Sample Request Body, modify to fit your needs
 requestBody="<group>
 	<id>1</id>
 	<name>Administrators</name>
