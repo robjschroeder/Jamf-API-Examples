@@ -30,7 +30,7 @@ tokenExpiration=$(/bin/echo "${authToken}" | /usr/bin/plutil -extract expires ra
 tokenExpirationEpoch=$(/bin/date -j -f "%Y-%m-%dT%T" "${tokenExpiration}" +"%s")
 /bin/echo "Token will expire: ${tokenExpiration}"
 
-# Finds all accounts
+# Finds groups by ID
 curl --request GET \
 --url ${jamfProURL}/JSSResource/accounts/groupid/${groupID} \
 --header 'accept: application/xml' \
