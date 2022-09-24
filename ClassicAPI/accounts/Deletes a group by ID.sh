@@ -13,7 +13,7 @@ jamfProAPIPassword=""
 jamfProURL=""
 
 # ID value to filter by
-groupID="1"
+groupID=""
 
 # Token declarations
 token=""
