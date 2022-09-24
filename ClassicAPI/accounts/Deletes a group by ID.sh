@@ -30,7 +30,7 @@ tokenExpiration=$(/bin/echo "${authToken}" | /usr/bin/plutil -extract expires ra
 tokenExpirationEpoch=$(/bin/date -j -f "%Y-%m-%dT%T" "${tokenExpiration}" +"%s")
 /bin/echo "Token will expire: ${tokenExpiration}"
 
-# Creates a new group by ID
+# Deletes a group by ID
 curl --request DELETE \
 --url ${jamfProURL}/JSSResource/accounts/groupid/${groupID} \
 --header "Authorization: Bearer ${token}"
