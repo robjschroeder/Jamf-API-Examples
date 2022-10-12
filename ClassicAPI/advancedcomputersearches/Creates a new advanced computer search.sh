@@ -53,7 +53,7 @@ tokenExpiration=$(/bin/echo "${authToken}" | /usr/bin/plutil -extract expires ra
 tokenExpirationEpoch=$(/bin/date -j -f "%Y-%m-%dT%T" "${tokenExpiration}" +"%s")
 /bin/echo "Token will expire: ${tokenExpiration}"
 
-# Creates a new account by ID
+# Creates a new advanced computer search
 curl --request POST \
 --url ${jamfProURL}/JSSResource/advancedcomputersearches/id/0 \
 --header 'Accept: application/xml' \
