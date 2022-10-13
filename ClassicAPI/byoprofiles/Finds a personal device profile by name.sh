@@ -30,7 +30,7 @@ tokenExpiration=$(/bin/echo "${authToken}" | /usr/bin/plutil -extract expires ra
 tokenExpirationEpoch=$(/bin/date -j -f "%Y-%m-%dT%T" "${tokenExpiration}" +"%s")
 /bin/echo "Token will expire: ${tokenExpiration}"
 
-# Finds personal device profile by ID
+# Finds personal device profile by name
 curl --request GET \
 --url ${jamfProURL}/JSSResource/byoprofiles/name/${name} \
 --header 'accept: application/xml' \
