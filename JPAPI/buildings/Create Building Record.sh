@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Classic API > buildings > Create Building Record
+# Jamf Pro API > buildings > Create Building Record
 #
 # Created 12.07.2022 @robjschroeder
 
